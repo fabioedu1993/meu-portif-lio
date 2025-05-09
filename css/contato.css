@@ -1,0 +1,132 @@
+.bg-contato{
+  background-image: linear-gradient(#ededed 50%, #111111 50%);
+  padding-bottom: 120px;
+}
+.contato{
+  background: var(--cor-10);
+  box-shadow: -4px 4px 5px rgba(0,0,0,.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contato-conteudo{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.contato-conteudo h2{
+  padding-top: 180px;
+  line-height: 1.5;
+  padding-bottom: 60px;
+  color: var(--cor-0);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contato-conteudo p{
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--cor-0);
+  padding-bottom: 40px;
+}
+
+.contato-conteudo address{
+  font-style: normal;
+}
+
+.contato-conteudo address a{
+  display: block;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color:var(--cor-0)
+}
+
+.contato-form{
+  padding-right: 80px;
+}
+
+.contato-formulario{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px ;
+  padding-bottom: 20px;
+}
+
+.col1{
+  padding-top: 180px;
+  display: flex;
+  gap: 20px;
+}
+
+.contato-formulario input[type="text"],
+.contato-formulario input[type="email"],
+.contato-formulario input[type="tel"],
+.contato-formulario textarea,
+.contato-formulario button {
+  width: 220px;
+  height: 50px;
+  font-size: 1.5rem;
+  color: var(--cor-9);
+  padding: 10px 30px;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contato-formulario textarea {
+  height: 200px;
+}
+
+.contato-formulario  input[type="text"]:focus,
+.contato-formulario  input[type="email"]:focus,
+.contato-formulario input[type="tel"]:focus,
+.contato-formulario  textarea:focus {
+  outline: none;
+  border-color: var(--corPrimaria-2);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px var(--corPrimaria-1);
+}
+
+.contato-formulario button{
+  color: var(--corPrimaria-5);
+  background: var(--corPrimaria-1);
+  border: 1px solid var(--corPrimaria-3);
+}
+
+.contato-formulario button:hover{
+  color: var(--corPrimaria-1);
+  background: var(--corPrimaria-3);
+  border: 1px solid var(--corPrimaria-1);
+}
+
+.contato-icones{
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.icones1-contato{
+  display: block;
+}
+
+.icones2-contato{
+  display: none;
+}
+
+.icones-link:hover .icones1-contato{
+  display: none;
+}
+.icones-link:hover .icones2-contato{
+  display: block;
+}
+
+.contato-icones img{
+  width: 50px;
+  height: 50px;
+}

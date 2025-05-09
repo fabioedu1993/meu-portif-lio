@@ -1,0 +1,84 @@
+.bg-header{
+  background: var(--cor-2);
+}
+.header{
+  display: grid;
+  grid-template-columns: 350px 1fr;
+}
+
+.logo{
+  font-family: 'poppins';
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-left: 30px;
+  width: 100%;
+  background: var(--cor-12);
+}
+
+.logo a{
+  text-decoration: none;
+  color: var(--cor-0);
+}
+
+.logo span{
+  background: linear-gradient( var(--corPrimaria-3)10%, var(--corPrimaria-1)90%);
+  background-clip: text;
+  color: transparent;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 2.5rem;
+  padding-top: 2.5rem;
+  justify-self: end;
+}
+  
+.menu a {
+  display: block;
+  font-size: 1.2rem;
+  font-weight:700;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  color: var(--cor-10);
+  position: relative;
+}
+  
+.menu a::after{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background: var(--cor-10);
+  transition: all .3s;
+}
+  
+.menu a:hover::after{
+  width: 100%;
+}
+
+@media screen and (max-width:700px) {
+  .header{
+    grid-template-columns: 1fr 1fr;
+  }
+  .logo{
+    background: var(--cor-12);
+    font-size: 2rem;
+    padding-left: 15px;
+  }
+  .js .menu{
+    display: none;
+  }
+
+  .bg-header{
+    background: var(--cor-12);
+  }
+}
+

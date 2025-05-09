@@ -1,0 +1,113 @@
+.bg-projetos{
+  background: var(--cor-2);
+}
+
+.titulo-projeto{
+  text-align: center;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+
+.projetos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 120px;
+}
+
+.projetos-cards{
+  background-color: var(--cor-0);
+  max-width: 400px;
+  margin-top: 80px;
+  box-shadow: -4px 4px 5px rgba(0,0,0,.5);
+  transform: translateY(0);
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.projetos-cards:hover{
+  transform: translateY(-30px);
+}
+
+.projetos-cards.card2{
+  transform: translateY(50px);
+  transition: all .3s;
+}
+
+.projetos-cards.card2:hover{
+  transform: translateY(20px);
+}
+
+.projetos-cards_img{
+  background-image: url(../img/tatuagem.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+
+.projetos-cards_img::before{
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(rgba(0,0,0,.3)70%, rgba(0,0,0));
+  transition: all .3s;
+}
+
+.projetos-cards:hover .projetos-cards_img::before{
+  opacity: 1;
+}
+
+.projetos-cards_icones{
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+  transition: all .3s;
+}
+
+.projetos-cards:hover .projetos-cards_icones{
+  opacity: 1;
+}
+
+.projetos-cards_icones img{
+  width: 30px;
+  height: 30px;
+}
+
+.projetos-cards h2 {
+  padding: 50px 20px 30px;
+  color: var(--corPrimaria-2);
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.projetos-cards h2::before{
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 5px;
+  top: 20px;
+  background:  var(--corPrimaria-3);
+  transition: all .3s;
+}
+
+.projetos-cards:hover h2::before{
+  width: 20%;
+}
+
+.projetos-cards P{
+  font-size: 1.1rem;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  text-wrap: balance;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}

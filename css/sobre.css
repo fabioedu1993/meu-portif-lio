@@ -1,0 +1,17 @@
+.bg-sobre{
+  background: var(--cor-0);
+  height: 800px;
+}
+
+.sobre{
+  padding-top: 30px;
+  margin-bottom: 120px;
+}
+
+.sobre p{
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--cor-10);
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <script>document.documentElement.className += ' js';</script>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="bg-header">
+    <div class="header container">
+      <div class="logo" >
+        <a href="index.html">
+          {<span>F</span>}ábio
+        </a>
+      </div>
+      <nav class="navegacao" data-menu="menu-mobile">
+        <div class="menu-hamburgue" data-menu="menu-hamburgue">
+          <span id="addRemove" class="span1"></span>
+          <span id="addRemove" class="span3"></span>
+          <span id="addRemove" class="span2"></span>
+        </div>
+        <ul data-menu="suave" class="menu" id="menu-mobile">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="bg-introducao">
+    <section class="introducao container">
+      <div class="introducao-img">
+        <img src="./img/perfil.png" alt="">
+      </div>
+      <div class="introducao-conteudo">
+        <h1><span>Olá! sou Fábio Botelho</span>
+          Desenvolvedor Front End &
+          UX/UI Designer.</h1>
+          <div class="botoes-introducao" data-menu="suave">
+            <a class="botao-introducao" href="#contato">Fale Comigo</a>
+            <a class="botao-introducao" href="#projetos">Veja meus Projetos</a>
+          </div>
+      </div>
+    </section>
+  </main>
+  <section id="sobre" class="sobre container" data-anime="scroll">
+    <h2 class="sub-titulos">Sobre mim</h2>
+    <span class="decorador"></span>
+    <p>Desenvolvedor Front-end com habilidades em HTML, CSS, React.js, JavaScript, Tailwind, Bootstrap, TypeScript, Sass, UI/UX Design. Apaixonado pelo desenvolvimento de componentes reutilizáveis. Também possui experiência em projetos gerenciados por Metodologias Ágeis. Formado em Sistemas de Informação e cursando Especialização em Front-End na Digital House Brasil.</p>
+  </section>
+  <section id="habilidades" class="bg-habilidades">
+    <div class="habilidades container" data-anime="scroll">
+      <h2 class="sub-titulos">Habilidades</h2>
+      <span class="decorador"></span>
+      <div class="habilidades-conteudo">
+        <div class="habilidades-conteudo_icones" data-tab="menu">
+          <div class="icones ativo">
+            <img class="icones1" src="./img/icones/html-five.svg" alt="HTML">
+            <img class="icones2" src="./img/icones/html-five-laranja.svg" alt="">
+          </div>
+          <div class="icones">
+            <img class="icones1" src="./img/icones/css3.svg" alt="HTML">
+            <img class="icones2" src="./img/icones/css3-laranja.svg" alt="">
+          </div>
+          <div class="icones">
+            <img class="icones1" src="./img/icones/figma.svg" alt="HTML">
+            <img class="icones2" src="./img/icones/figma-laranja.svg" alt="">
+          </div>
+          <div class="icones">
+            <img class="icones1" src="./img/icones/javascript.svg" alt="HTML">
+            <img class="icones2" src="./img/icones/javascript-laranja.svg" alt="">
+          </div>
+          <div class="icones">
+            <img class="icones1" src="./img/icones/tailwindcss.svg" alt="HTML">
+            <img class="icones2" src="./img/icones/tailwindcss-laranja.svg" alt="">
+          </div>
+          <div class="icones">
+            <img class="icones1" src="./img/icones/react.svg" alt="HTML">
+            <img class="icones2" src="./img/icones/react-laranja.svg" alt="">
+          </div>
+          <div class="icones">
+            <img class="icones1" src="./img/icones/bootstrap.svg" alt="HTML">
+            <img class="icones2" src="./img/icones/bootstrap-laranja.svg" alt="">
+          </div>
+          <div class="icones">
+            <img class="icones1" src="./img/icones/typescript.svg" alt="HTML">
+            <img class="icones2" src="./img/icones/typescript-laranja.svg" alt="">
+          </div>
+          <div class="icones">
+            <img class="icones1" src="./img/icones/sass.svg" alt="HTML">
+            <img class="icones2" src="./img/icones/sass-laranja.svg" alt="">
+          </div>
+        </div>
+        <div class="habilidades-conteudo_texto" data-tab="content">
+          <div class="habilidades-texto ativo show-down">
+            <h2>HTML</h2>
+            <span></span>
+            <p class="paragrafo">HTML é uma linguagem de marcação, onde marcamos
+             os elementos para definir quais informações a página
+             vai exibir.</p>
+          </div>
+          <div class="habilidades-texto show-right">
+            <h2>CSS</h2>
+            <span></span>
+            <p class="paragrafo">CSS, que significa Cascading Style Sheets (Folhas de Estilo em Cascata), é uma linguagem de programação que permite definir a aparência e o layout de páginas web.</p>
+          </div>
+          <div class="habilidades-texto show-down">
+            <h2>Figma</h2>
+            <span></span>
+            <p class="paragrafo">O Figma é uma ferramenta de design colaborativa e baseada na web, utilizada para criar interfaces de usuário (UI), experiências de usuário (UX), protótipos, e até mesmo apresentações interativas.</p>
+          </div>
+          <div class="habilidades-texto show-right">
+            <h2>Javascript</h2>
+            <span></span>
+            <p class="paragrafo">JavaScript é uma linguagem de programação de script do lado do cliente, utilizada para adicionar interatividade e dinamismo a páginas web. </p>
+          </div>
+          <div class="habilidades-texto show-down">
+            <h2>Tailwind</h2>
+            <span></span>
+            <p class="paragrafo">Tailwind CSS é um framework de estilo CSS que se concentra em fornecer um conjunto de classes de utilidade que podem ser aplicadas diretamente ao HTML para estilizar elementos.  </p>
+          </div>
+          <div class="habilidades-texto show-right">
+            <h2>React</h2>
+            <span></span>
+            <p class="paragrafo">React é uma biblioteca JavaScript de código aberto utilizada para construir interfaces de usuário (UI) em aplicativos web.  </p>
+          </div>
+          <div class="habilidades-texto show-down">
+            <h2>Bootestrap</h2>
+            <span></span>
+            <p class="paragrafo">Bootstrap é um framework front-end de código aberto utilizado para criar sites e aplicações web, facilitando o desenvolvimento de interfaces responsivas (adaptáveis a diferentes tamanhos de tela). </p>
+          </div>
+          <div class="habilidades-texto show-right">
+            <h2>Typescript</h2>
+            <span></span>
+            <p class="paragrafo">TypeScript é uma linguagem de programação de código aberto, criada pela Microsoft, que se baseia no JavaScript e adiciona tipagem estática opcional. </p>
+          </div>
+          <div class="habilidades-texto show-down">
+            <h2>Sass</h2>
+            <span></span>
+            <p class="paragrafo show-right">SASS, que significa "Syntactically Awesome Style Sheets", é uma linguagem de extensão para CSS que oferece funcionalidades avançadas para a criação de estilos de páginas web. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projetos" class="bg-projetos" data-anime="scroll">
+      <h1 class="titulo-projeto sub-titulos">Projetos</h1>
+      <span class="decorador"></span>
+      <div class="projetos container">
+      <div class="projetos-cards">
+        <div class="projetos-cards_img">
+          <div class="projetos-cards_icones">
+            <img src="./img/icones/figma-branco.svg" alt="icone do figima">
+            <img src="./img/icones/html-five-branco.svg" alt="icone do HTML5">
+            <img src="./img/icones/css3-branco.svg" alt="icone do CSS3">
+            <img src="./img/icones/javascript-branco.svg" alt="icone do Javascript">
+          </div>
+        </div>
+        <h2>Projeto Tatuagem</h2>
+        <p>
+          Criei esse web site para um estúdio de tatuagem, usei as tecnologias HTML, CSS, Javascript, além de ter feito todo seu layout no Figma.
+        </p>
+      </div>
+      <div class="projetos-cards card2">
+        <div class="projetos-cards_img">
+          <div class="projetos-cards_icones">
+            <img src="./img/icones/figma-branco.svg" alt="icone do figima">
+            <img src="./img/icones/html-five-branco.svg" alt="icone do HTML5">
+            <img src="./img/icones/css3-branco.svg" alt="icone do CSS3">
+            <img src="./img/icones/javascript-branco.svg" alt="icone do Javascript">
+          </div>
+        </div>
+        <h2>Projeto Tatuagem</h2>
+        <p>
+          Criei esse web site para um estúdio de tatuagem, usei as tecnologias HTML, CSS, Javascript, além de ter feito todo seu layout no Figma.
+        </p>
+      </div>
+      <div class="projetos-cards">
+        <div class="projetos-cards_img">
+          <div class="projetos-cards_icones">
+            <img src="./img/icones/figma-branco.svg" alt="icone do figima">
+            <img src="./img/icones/html-five-branco.svg" alt="icone do HTML5">
+            <img src="./img/icones/css3-branco.svg" alt="icone do CSS3">
+            <img src="./img/icones/javascript-branco.svg" alt="icone do Javascript">
+          </div>
+        </div>
+        <h2>Projeto Tatuagem</h2>
+        <p>
+          Criei esse web site para um estúdio de tatuagem, usei as tecnologias HTML, CSS, Javascript, além de ter feito todo seu layout no Figma.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="contato" class="bg-contato">
+    <div class="contato container" data-anime="scroll">
+      <div class="contato-conteudo">
+        <h2>Entre com contato</h2>
+        <p>Quer mandar um oi, pedir meu currículo ou ver se podemos construir algo incrível juntos? Adoraria ouvir você!
+        </p>
+        <p>Preencha suas informações no formulário ao lado e aguardarei seu contato!</p>
+        <address>
+          <a href="mailto:webmaster@somedomain.com">fabioedu1993@gmail.com</a>
+          <p>Cel: (21) 95932-2998</p>
+        </address>
+      </div>
+
+      <div class="contato-form">
+        <form class="contato-formulario" action="">
+          <div class="col1">
+            <input type="text" id="nome" name="nome" placeholder="Nome:" autocomplete="off">
+            <input type="text" id="email" name="email" placeholder="Email:" autocomplete="off">
+          </div>
+          <input type="tel" id="cell" name="cell" placeholder="Telefone:" autocomplete="off">
+          <textarea placeholder="Digite sua menssagem aqui..." autocomplete="off"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="contato-icones">
+        <a class="icones-link" href="#">
+          <img class="icones1-contato" src="./img/icones/linkedin1.svg" alt="">
+          <img class="icones2-contato" src="./img/icones/linkedin2.svg" alt="">
+        </a>
+        <a class="icones-link" href="#">
+          <img class="icones1-contato" src="./img/icones/github1.svg" alt="">
+          <img class="icones2-contato" src="./img/icones/github2.svg" alt="">
+        </a>
+        <a class="icones-link" href="#">
+          <img class="icones1-contato" src="./img/icones/facebook1.svg" alt="">
+          <img class="icones2-contato" src="./img/icones/facebook2.svg" alt="">
+        </a>
+        <a class="icones-link" href="#">
+          <img class="icones1-contato" src="./img/icones/instagram1.svg" alt="">
+          <img class="icones2-contato" src="./img/icones/instagram2.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+   <footer class="bg-footer">
+    <div class="footer container">
+      <div class="logo" >
+        <a href="index.html">
+          {<span>F</span>}ábio
+        </a>
+      </div>
+      <p>Vivendo, aprendendo e evoluindo um dia de cada vez.</p>
+    </div>
+   </footer>
+</body>
+<script type="module" src="./js/script.js"></script>
+</html>
