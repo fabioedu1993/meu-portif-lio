@@ -18,8 +18,8 @@
   gap: 2rem;
   justify-self: center;
   align-items: center;
-  margin-top: 60px;
-  margin-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 .icones1,
@@ -60,7 +60,7 @@
   letter-spacing: 5px;
   color: var(--cor-3);
   opacity: 0.1;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .habilidades-conteudo_texto span{
@@ -97,4 +97,71 @@
 
 [data-tab="content"] .habilidades-texto.ativo.show-down {
   animation: show-down .5s forwards;
+}
+
+@media screen and (max-width:1024px) {
+
+.icones1,
+.icones2 {
+  height: 100px;
+  width: 100px;
+}
+
+.habilidades-conteudo_texto h2{
+  font-size: 6.2rem;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 5px;
+  color: var(--cor-3);
+  opacity: 0.1;
+  padding-bottom: 30px;
+}
+
+.habilidades-conteudo_texto span{
+  display: block;
+}
+}
+
+@media screen and (max-width:768px) {
+
+.habilidades-conteudo{
+  grid-template-columns: 1fr;
+}
+
+.habilidades-conteudo_icones{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+}
+
+.icones1,
+.icones2 {
+  height: 50px;
+  width: 50px;
+}
+
+.habilidades-conteudo_texto h2{
+  font-size: 4.2rem;
+  line-height: 1.1;
+  padding-bottom: 30px;
+}
+
+.habilidades-conteudo_texto span{
+  display: block;
+  width: 240px;
+  height: 5px;
+  background: var(--cor-3);
+  opacity: 0.1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.paragrafo{
+  padding-left: 20px;
+  padding-bottom: 60px;
+}
 }

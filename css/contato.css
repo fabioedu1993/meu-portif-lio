@@ -65,9 +65,9 @@
 .contato-formulario button {
   width: 220px;
   height: 50px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--cor-9);
-  padding: 10px 30px;
+  padding: 10px;
   background: var(--cor-1);
   border: 1px solid var(--cor-2);
   border-radius: 4px;
@@ -129,4 +129,51 @@
 .contato-icones img{
   width: 50px;
   height: 50px;
+}
+
+@media screen and (max-width:768px) {
+.bg-contato{
+  background: var(--cor-10);
+  padding-bottom: 0px;
+}
+.contato{
+  background:none;
+  grid-template-columns: 1fr;
+}
+
+.contato-conteudo{
+  padding: 0 20px 0;
+}
+
+.contato-conteudo h2{
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-size: 1.3rem;
+}
+
+.contato-conteudo p{
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding-bottom: 20px;
+  max-width: 50ch;
+}
+
+.contato-form{
+  padding:0 20px 0;
+}
+
+.col1{
+  padding-top: 60px;
+}
+
+.contato-formulario textarea {
+  height: 200px;
+}
+
+.contato-icones{
+  grid-column: span 1;
+  gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 }

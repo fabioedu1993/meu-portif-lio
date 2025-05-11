@@ -69,10 +69,18 @@ html{
   }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
   .container{
-    padding: 0;
+    padding: 0px;
+    margin: 0;
   }
-  
+
+  .sub-titulos{
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
 }
 

@@ -214,16 +214,20 @@
       </div>
 
       <div class="contato-form">
-        <form class="contato-formulario" action="">
+        <form class="contato-formulario" action="https://formsubmit.co/fabioedu1993@gmail.com" method="post">
           <div class="col1">
-            <input type="text" id="nome" name="nome" placeholder="Nome:" autocomplete="off">
-            <input type="text" id="email" name="email" placeholder="Email:" autocomplete="off">
+            <input type="text" id="nome" name="nome" placeholder="Nome:" required>
+            <input type="text" id="email" name="email" placeholder="Email:" required>
           </div>
-          <input type="tel" id="cell" name="cell" placeholder="Telefone:" autocomplete="off">
-          <textarea placeholder="Digite sua menssagem aqui..." autocomplete="off"></textarea>
+          <input type="tel" id="cell" name="cell" placeholder="Telefone:" required>
+          <textarea name="message" placeholder="Digite sua menssagem aqui..." required></textarea>
           <button type="submit">Enviar</button>
+          <input type="hidden" name="_subject" value="Novo Contato!">
+          <input type="text" name="_honey" style="display: none;">
+          <input type="hidden" name="_captcha" value="false">
         </form>
       </div>
+      
       <div class="contato-icones">
         <a class="icones-link" href="#">
           <img class="icones1-contato" src="./img/icones/linkedin1.svg" alt="">
@@ -246,7 +250,7 @@
   </section>
    <footer class="bg-footer">
     <div class="footer container">
-      <div class="logo" >
+      <div class="logo rodape" >
         <a href="index.html">
           {<span>F</span>}ábio
         </a>

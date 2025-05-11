@@ -64,14 +64,28 @@
   width: 100%;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1024px) {
+.header{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.menu a {
+  display: block;
+  font-size: 1.2rem;
+}
+}
+
+@media screen and (max-width:768px) {
   .header{
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--cor-10);
   }
   .logo{
     background: var(--cor-12);
     font-size: 2rem;
-    padding-left: 15px;
+    padding-left: 20px;
   }
   .js .menu{
     display: none;
@@ -81,4 +95,3 @@
     background: var(--cor-12);
   }
 }
-

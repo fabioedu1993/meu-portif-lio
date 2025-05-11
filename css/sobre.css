@@ -4,7 +4,6 @@
 }
 
 .sobre{
-  padding-top: 30px;
   margin-bottom: 120px;
 }
 
@@ -14,4 +13,21 @@
   text-align: center;
   text-wrap: balance;
   color: var(--cor-10);
+}
+
+@media screen and (max-width:768px) {
+  .bg-sobre{
+  height: max-content;
+}
+
+.sobre{
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.sobre p{
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+  
 }
