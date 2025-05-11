@@ -116,6 +116,7 @@
 .projetos{
   overflow-y: hidden;
   padding: 0 20px;
+  scroll-snap-type: x mandatory;
 }
 
 .projetos-cards{
@@ -126,6 +127,7 @@
   cursor: pointer;
   margin-top: 30px;
   margin-bottom:60px;
+  scroll-snap-align: start;
 }
 
 .projetos-cards:hover{

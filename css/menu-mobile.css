@@ -30,7 +30,7 @@
   .js #menu-mobile{
     position: absolute;
     inset: 0;
-    background: var(--cor-10);
+    background: var(--cor-12);
     z-index: 50;
     width: 300px;
     height: 300px;

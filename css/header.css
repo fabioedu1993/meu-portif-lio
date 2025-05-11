@@ -15,7 +15,7 @@
   padding-top: 20px;
   padding-left: 30px;
   width: 100%;
-  background: var(--cor-12);
+  background: var(--cor-11);
 }
 
 .logo a{
@@ -83,7 +83,7 @@
     border-bottom: 2px solid var(--cor-10);
   }
   .logo{
-    background: var(--cor-12);
+    background: var(--cor-11);
     font-size: 2rem;
     padding-left: 20px;
   }
@@ -92,6 +92,6 @@
   }
 
   .bg-header{
-    background: var(--cor-12);
+    background: var(--cor-11);
   }
 }
